@@ -59,9 +59,12 @@
   }
 }
 .nav__dropdown {
-  position: relative;
-  display: flex;
-  align-items: center;
+  display: none;
+  @include min-width('large') {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .dropdown__wrapper {

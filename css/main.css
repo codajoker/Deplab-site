@@ -209,6 +209,7 @@ button {
   border-radius: 30px;
   border-bottom: 0;
   backdrop-filter: blur(12.6826658249px);
+  transform: translate3d(0, 0, 0);
   margin-bottom: 50px;
 }
 @media (min-width: 1440px) {
@@ -291,6 +292,7 @@ button {
   border: 1px solid rgba(116, 116, 116, 0.25);
   border-bottom: 0;
   backdrop-filter: blur(12.6826658249px);
+  transform: translate3d(0, 0, 0);
 }
 .benefits__list-inf-1 {
   margin-top: 59px;
@@ -409,9 +411,14 @@ button {
 }
 
 .nav__dropdown {
-  position: relative;
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media (min-width: 1440px) {
+  .nav__dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .dropdown__wrapper {
@@ -507,6 +514,7 @@ button {
   border-radius: 50%;
   background-color: #0F0;
   filter: blur(142px);
+  transform: translate3d(0, 0, 0);
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -536,8 +544,8 @@ button {
   }
 }
 .hero__text {
-  margin-top: 163px;
-  margin-bottom: 163px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -648,6 +656,7 @@ button {
     border-radius: 355.185px;
     background: rgba(35, 252, 46, 0.5);
     filter: blur(286.5px);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -790,6 +799,7 @@ button {
 }
 .teams__arrow {
   cursor: pointer;
+  margin-right: 13px;
 }
 .teams__container {
   padding-left: 30px;
@@ -1035,6 +1045,7 @@ button {
     border-radius: 30px;
     border-bottom: 0;
     backdrop-filter: blur(12.6826658249px);
+    transform: translate3d(0, 0, 0);
   }
 }
 .vacancy__text {
@@ -1165,6 +1176,7 @@ button {
     border-radius: 561.067px;
     background: rgba(35, 252, 46, 0.5);
     filter: blur(286.5px);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -1193,6 +1205,7 @@ button {
   height: 179px;
   border-radius: 50%;
   filter: blur(126px);
+  transform: translate3d(0, 0, 0);
   background-color: #03FC10;
 }
 @media (min-width: 1440px) {
@@ -1218,6 +1231,7 @@ button {
   border-radius: 30px;
   border-bottom: 0;
   backdrop-filter: blur(12.6826658249px);
+  transform: translate3d(0, 0, 0);
 }
 @media (min-width: 1440px) {
   .webmaster__container {
@@ -1250,6 +1264,7 @@ button {
   padding-right: 10px; /* Расстояние от маркера до текста */
 }
 .webmaster__button {
+  color: #000000;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1274,6 +1289,7 @@ button {
     border-radius: 30px;
     border-bottom: 0;
     backdrop-filter: blur(12.6826658249px);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -1348,6 +1364,7 @@ button {
   border-radius: 50%;
   border-bottom: 0;
   backdrop-filter: blur(23.7241401672px);
+  transform: translate3d(0, 0, 0);
   margin-bottom: 5px;
 }
 .media__list-text {
@@ -1373,6 +1390,7 @@ button {
     opacity: 0.3;
     background: #23fc2e;
     filter: blur(86px);
+    transform: translate3d(0, 0, 0);
   }
 }
 

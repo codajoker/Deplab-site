@@ -44,6 +44,8 @@
     border-radius: 30px;
     border-bottom: 0;
     backdrop-filter: blur(12.682665824890137px);
+    transform: translate3d(0, 0, 0);
+
     margin-bottom: 50px;
     @include min-width('large') {
       width: 579px;

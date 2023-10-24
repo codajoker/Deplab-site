@@ -58,6 +58,8 @@
       border-radius: 50%;
       border-bottom: 0;
       backdrop-filter: blur(23.724140167236328px);
+      transform: translate3d(0, 0, 0);
+
       margin-bottom: 5px;
     }
     &-text {
@@ -81,6 +83,7 @@
       background: #23fc2e;
 
       filter: blur(86px);
+      transform: translate3d(0, 0, 0);
     }
   }
 }

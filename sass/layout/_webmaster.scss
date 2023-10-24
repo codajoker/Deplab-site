@@ -22,6 +22,8 @@
     height: 179px;
     border-radius: 50%;
     filter: blur(126px);
+    transform: translate3d(0, 0, 0);
+
     background-color: $main-icon-color;
     @include min-width('large') {
       margin-left: 0;
@@ -45,6 +47,8 @@
     border-radius: 30px;
     border-bottom: 0;
     backdrop-filter: blur(12.682665824890137px);
+    transform: translate3d(0, 0, 0);
+
     @include min-width('large') {
       width: 579px;
       padding-top: 105px;
@@ -71,6 +75,7 @@
     }
   }
   &__button {
+    color: $background-main-color;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -93,5 +98,6 @@
     border-radius: 30px;
     border-bottom: 0;
     backdrop-filter: blur(12.682665824890137px);
+    transform: translate3d(0, 0, 0);
   }
 }

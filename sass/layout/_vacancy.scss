@@ -16,6 +16,7 @@
       border-radius: 30px;
       border-bottom: 0;
       backdrop-filter: blur(12.682665824890137px);
+      transform: translate3d(0, 0, 0);
     }
   }
   &__text {
@@ -126,6 +127,7 @@
         background: rgba(35, 252, 46, 0.5);
 
         filter: blur(286.5px);
+        transform: translate3d(0, 0, 0);
       }
     }
   }
