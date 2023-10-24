@@ -1,0 +1,98 @@
+.hero {
+  padding-top: 10px;
+  position: relative;
+  @include min-width('large') {
+    padding-top: 23px;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include min-width('large') {
+      justify-content: start;
+      flex-direction: row-reverse;
+    }
+  }
+  &__decor {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    max-width: 375px;
+    @include min-width('large') {
+      max-width: 622px;
+      height: 475px;
+      top: 133px;
+      left: auto;
+      right: 18px;
+    }
+  }
+  &__elips {
+    position: absolute;
+    top: 50px;
+    width: 237px;
+    height: 237px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    filter: blur(142px);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include min-width('large') {
+      margin-right: 190px;
+      top: 110px;
+    }
+  }
+  &__image {
+    position: relative;
+    padding-top: 17px;
+    display: block;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 232px;
+    height: 432px;
+    @include min-width('large') {
+      width: 382px;
+      height: 693px;
+    }
+  }
+
+  &__text {
+    margin-top: 163px;
+    margin-bottom: 163px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include min-width('large') {
+      width: 555px;
+      margin-right: 125px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    @include min-width('large') {
+      @include font(48px, 400, 48px);
+    }
+  }
+  &__description {
+    color: $text-descr;
+    letter-spacing: -0.08px;
+    @include font();
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}

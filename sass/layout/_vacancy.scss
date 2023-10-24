@@ -1,0 +1,132 @@
+.vacancy {
+  position: relative;
+  @include min-width('large') {
+    padding-top: 90px;
+  }
+  &__container {
+    @include min-width('large') {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 38px;
+      padding-left: 162px;
+      padding-right: 162px;
+      border: 1px solid rgb(116, 116, 116, 25%);
+      border-radius: 30px;
+      border-bottom: 0;
+      backdrop-filter: blur(12.682665824890137px);
+    }
+  }
+  &__text {
+    margin-bottom: 40px;
+    @include min-width('large') {
+      margin-bottom: 86px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__description {
+    color: $text-descr;
+    @include font(14px, 400, 14px);
+    @include min-width('large') {
+      width: 680px;
+      @include font();
+    }
+  }
+  &__list {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include min-width('large') {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      align-self: flex-start;
+      flex-direction: column;
+      cursor: pointer;
+
+      border: 1px solid rgb(116, 116, 116, 25%);
+      padding: 28px 30px 19px 0px;
+      border-radius: 30px;
+      border-bottom: 0;
+      @include min-width('large') {
+        width: 488px;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 30px 30px 30px 0px;
+      }
+    }
+    &-item:nth-child(2n + 1) {
+      @include min-width('large') {
+        margin-right: 15px;
+      }
+    }
+    &-arrow {
+      width: 39px;
+      height: 43px;
+      @include min-width('large') {
+        margin-right: 53px;
+      }
+    }
+    &-title {
+      margin-left: 23px;
+      @include font(18px, 400, 23px);
+      @include min-width('large') {
+        margin-left: 0;
+      }
+    }
+    &-content {
+      display: none;
+      margin-top: 13px;
+      padding-left: 60px;
+      color: $text-descr;
+    }
+    &-button {
+      display: block;
+      text-align: center;
+      width: auto;
+      padding: 19px 34px 12px 34px;
+      @include font(18px, 700, 18px);
+      margin-top: 50px;
+      color: $background-main-color;
+      margin-left: -33px;
+    }
+  }
+  &__decor {
+    display: none;
+    @include min-width('large') {
+      display: block;
+      width: 975px;
+      height: 975px;
+      position: absolute;
+      left: 218px;
+      top: -120px;
+    }
+    &-sec {
+      display: none;
+
+      @include min-width('large') {
+        display: block;
+        position: absolute;
+        top: 400px;
+        right: 500px;
+        width: 336px;
+        height: 561.067px;
+        transform: rotate(-30deg);
+        border-radius: 561.067px;
+        background: rgba(35, 252, 46, 0.5);
+
+        filter: blur(286.5px);
+      }
+    }
+  }
+}

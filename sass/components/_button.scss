@@ -1,0 +1,18 @@
+.button {
+  width: 285px;
+  height: 57px;
+
+  text-align: center;
+  padding: 18px 57px 18px 57px;
+  font-family: 'Futura';
+  @include font(18px, 700);
+  border: none;
+  border-radius: 9px;
+  background-color: $accent-color;
+  cursor: pointer;
+  transition: background-color $main-duration $timing-function;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
+}

@@ -1,0 +1,105 @@
+.header {
+  margin-top: 28px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    &-list {
+      display: none;
+      @include min-width('large') {
+        display: flex;
+        align-items: center;
+        margin-left: 116px;
+        margin-right: 63px;
+      }
+    }
+    &-item {
+      @include font(16px, 400, 18px);
+      color: #e0e0e0;
+    }
+    &-item:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+  &__burger {
+    margin-left: auto;
+    background-color: transparent;
+    @include min-width('large') {
+      display: none;
+    }
+  }
+  &__auth {
+    display: none;
+    @include min-width('large') {
+      margin-left: 63px;
+      display: flex;
+      align-items: center;
+      padding: 12px 15px 12px 10px;
+      border-radius: 10px;
+      border: 1px solid $main-icon-color;
+      &-icon {
+        margin-right: 11px;
+      }
+      &-link {
+        @include font(18px, 700, 18px);
+      }
+      &-link:not(:last-child) {
+        margin-right: 11px;
+        display: flex;
+        align-items: center;
+      }
+      &-link:not(:last-child)::after {
+        content: '';
+        display: inline-block;
+        margin-left: 10px;
+        width: 1px;
+        height: 23px;
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+.nav__dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__wrapper {
+  @include max-width('large') {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: 2000;
+  top: 18px;
+  left: -33px;
+  width: 96px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all $main-duration $timing-function;
+  transform: translateY(70px);
+  background-color: #292929;
+  border-radius: 20px;
+}
+
+.dropdown {
+  //   background-color: $primary-white-color;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.dropdown-is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.header__leangth-item:not(:last-child) {
+  margin-bottom: 19px;
+}

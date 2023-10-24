@@ -1,0 +1,36 @@
+.footer {
+  position: relative;
+  background: #0a0a0b;
+  &__container {
+    padding: 43px 30px 60px 30px;
+  }
+  &__list {
+    @include min-width('large') {
+      width: 876px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &-item {
+      color: $text-descr;
+      @include font(14px, 400, 24px);
+      @include min-width('large') {
+        flex-basis: calc(
+          33.33% - 10px
+        ); /* 33.33% минус отступы, чтобы уместить три элемента в ряду */
+        margin: 5px; /* Добавьте отступы между элементами */
+      }
+    }
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    @include min-width('large') {
+      flex-direction: raw;
+      align-items: center;
+    }
+  }
+}

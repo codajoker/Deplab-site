@@ -1,0 +1,97 @@
+.webmaster {
+  position: relative;
+  &__img {
+    @include min-width('large') {
+      position: absolute;
+      left: -140px;
+      width: 284px;
+      height: 428px;
+    }
+  }
+  &__decor {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    filter: blur(126px);
+    background-color: $main-icon-color;
+    @include min-width('large') {
+      margin-left: 0;
+      margin-right: 0;
+      top: 51px;
+      left: 90px;
+    }
+  }
+  &__container {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 345px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 76px;
+    border: 1px solid rgb(116, 116, 116, 25%);
+    border-radius: 30px;
+    border-bottom: 0;
+    backdrop-filter: blur(12.682665824890137px);
+    @include min-width('large') {
+      width: 579px;
+      padding-top: 105px;
+      padding-right: 65px;
+      padding-bottom: 109px;
+      padding-left: 128px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__list {
+    &-item {
+      color: $text-descr;
+      @include font(14px, 400, 20px);
+      @include min-width('large') {
+        @include font(16px, 400, 20px);
+      }
+    }
+    &-item::before {
+      color: $text-descr; /* Цвет маркера */
+      content: '•'; /* Сам маркер */
+      padding-right: 10px; /* Расстояние от маркера до текста */
+    }
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.webmaster-advertiser__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include min-width('large') {
+    margin-top: 55px;
+    padding-top: 65px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgb(116, 116, 116, 25%);
+    border-radius: 30px;
+    border-bottom: 0;
+    backdrop-filter: blur(12.682665824890137px);
+  }
+}
