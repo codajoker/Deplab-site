@@ -702,6 +702,7 @@ button {
 }
 .partner__container {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -1197,6 +1198,11 @@ button {
 }
 .vacancy__title {
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .vacancy__title {
+    text-align: center;
+  }
 }
 .vacancy__description {
   color: #787878;

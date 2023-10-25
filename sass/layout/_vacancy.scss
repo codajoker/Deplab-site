@@ -34,6 +34,9 @@
   }
   &__title {
     margin-bottom: 20px;
+    @include min-width('mac') {
+      text-align: center;
+    }
   }
   &__description {
     color: $text-descr;
