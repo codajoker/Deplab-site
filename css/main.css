@@ -284,7 +284,7 @@ button {
 
 @media (min-width: 1200px) {
   .large {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -294,6 +294,15 @@ button {
 @media (min-width: 1200px) {
   .en-br {
     display: block;
+  }
+}
+
+.mob {
+  display: none !important;
+}
+@media (min-width: 1200px) {
+  .mob {
+    display: block !important;
   }
 }
 
@@ -1684,7 +1693,7 @@ button {
   margin-right: 6px;
 }
 .mobile-menu {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .mobile-menu__item {
   font-size: 14px;
@@ -1694,6 +1703,24 @@ button {
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 15px;
+}
+.mobile__auth {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 15px 12px 10px;
+  border-radius: 10px;
+  border: 1px solid #03FC10;
+}
+.mobile__auth-icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 11px;
+}
+.mobile__auth-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .mobile-open {

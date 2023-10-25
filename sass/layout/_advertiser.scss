@@ -97,12 +97,18 @@
 }
 .large {
   @include min-width('mac') {
-    display: none;
+    display: none !important;
   }
 }
 .en-br {
   display: none;
   @include min-width('mac') {
     display: block;
+  }
+}
+.mob {
+  display: none !important;
+  @include min-width('mac') {
+    display: block !important;
   }
 }
