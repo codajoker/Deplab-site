@@ -1,6 +1,12 @@
 .webmaster {
   position: relative;
   &__img {
+    @include min-width('mac') {
+      position: absolute;
+      left: -110px;
+      width: 250px;
+      height: 380px;
+    }
     @include min-width('large') {
       position: absolute;
       left: -140px;
@@ -25,6 +31,13 @@
     transform: translate3d(0, 0, 0);
 
     background-color: $main-icon-color;
+    @include min-width('mac') {
+      margin-left: 0;
+      margin-right: 0;
+      left: auto;
+      top: 150px;
+      right: 200px;
+    }
     @include min-width('large') {
       margin-left: 0;
       margin-right: 0;
@@ -48,6 +61,13 @@
     border-bottom: 0;
     backdrop-filter: blur(12.682665824890137px);
     transform: translate3d(0, 0, 0);
+    @include min-width('mac') {
+      width: 522px;
+      padding-top: 94px;
+      padding-right: 66px;
+      padding-bottom: 60px;
+      padding-left: 115px;
+    }
 
     @include min-width('large') {
       width: 579px;
@@ -59,12 +79,15 @@
   }
   &__title {
     margin-bottom: 20px;
+    @include min-width('mac') {
+      @include font(40px, 700, 40px);
+    }
   }
   &__list {
     &-item {
       color: $text-descr;
       @include font(14px, 400, 20px);
-      @include min-width('large') {
+      @include min-width('mac') {
         @include font(16px, 400, 20px);
       }
     }
@@ -79,6 +102,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    @include min-width('mac') {
+      margin-top: 30px;
+    }
   }
 }
 .webmaster-advertiser__container {
@@ -86,7 +112,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @include min-width('large') {
+  @include min-width('mac') {
+    padding-right: 30px;
+    padding-left: 30px;
     margin-top: 55px;
     padding-top: 65px;
     display: flex;
@@ -99,5 +127,9 @@
     border-bottom: 0;
     backdrop-filter: blur(12.682665824890137px);
     transform: translate3d(0, 0, 0);
+  }
+  @include min-width('large') {
+    padding-right: 60px;
+    padding-right: 60px;
   }
 }

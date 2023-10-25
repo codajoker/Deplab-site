@@ -1,10 +1,11 @@
 .benefits {
+  padding-top: 88px;
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    @include min-width('large') {
+    @include min-width('mac') {
       flex-direction: row;
     }
     &-item {
@@ -13,14 +14,14 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      @include min-width('large') {
-      }
     }
     &-item:not(:last-child) {
       margin-right: 19px;
     }
 
     &-inf {
+      position: relative;
+      z-index: 10;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -32,18 +33,11 @@
       border-bottom: 0;
       backdrop-filter: blur(12.682665824890137px);
       transform: translate3d(0, 0, 0);
-
-      &-1 {
-        margin-top: 59px;
+      @include min-width('mac') {
+        width: 258px;
       }
-      &-2 {
-        margin-top: 51px;
-      }
-      &-3 {
-        margin-top: 50px;
-      }
-      &-4 {
-        margin-top: 59px;
+      @include min-width('large') {
+        width: 285px;
       }
     }
     &-text {
@@ -57,19 +51,26 @@
       position: absolute;
       top: 0;
       &-1 {
+        top: -65px;
         width: 134px;
         height: 146px;
       }
       &-2 {
+        top: -55px;
+
         width: 98px;
         height: 72px;
       }
       &-3 {
-        width: 107px;
-        height: 78px;
+        top: -75px;
+
+        width: 133px;
+        height: 128px;
         transform: rotate(-5.819deg);
       }
       &-4 {
+        top: -60px;
+
         width: 81px;
         height: 83px;
       }

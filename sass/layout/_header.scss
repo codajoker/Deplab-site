@@ -5,6 +5,12 @@
     align-items: center;
     &-list {
       display: none;
+      @include min-width('mac') {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
       @include min-width('large') {
         display: flex;
         align-items: center;
@@ -23,12 +29,39 @@
   &__burger {
     margin-left: auto;
     background-color: transparent;
-    @include min-width('large') {
+    @include min-width('mac') {
       display: none;
     }
   }
   &__auth {
     display: none;
+    @include min-width('mac') {
+      margin-left: 39px;
+      display: flex;
+      align-items: center;
+      padding: 12px 15px 12px 10px;
+      border-radius: 10px;
+      border: 1px solid $main-icon-color;
+      &-icon {
+        margin-right: 11px;
+      }
+      &-link {
+        @include font(18px, 700, 18px);
+      }
+      &-link:not(:last-child) {
+        margin-right: 11px;
+        display: flex;
+        align-items: center;
+      }
+      &-link:not(:last-child)::after {
+        content: '';
+        display: inline-block;
+        margin-left: 10px;
+        width: 1px;
+        height: 23px;
+        background-color: $accent-color;
+      }
+    }
     @include min-width('large') {
       margin-left: 63px;
       display: flex;
@@ -60,7 +93,8 @@
 }
 .nav__dropdown {
   display: none;
-  @include min-width('large') {
+
+  @include min-width('mac') {
     position: relative;
     display: flex;
     align-items: center;
@@ -68,7 +102,7 @@
 }
 
 .dropdown__wrapper {
-  @include max-width('large') {
+  @include max-width('mac') {
     display: none;
   }
 

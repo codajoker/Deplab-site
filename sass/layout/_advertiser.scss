@@ -1,4 +1,7 @@
 .advertiser {
+  @include min-width('mac') {
+    margin-left: 30px;
+  }
   @include min-width('large') {
     margin-left: 40px;
   }
@@ -23,7 +26,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    @include min-width('large') {
+
+    @include min-width('mac') {
       padding-right: 0;
       padding-left: 0;
     }
@@ -47,6 +51,14 @@
     transform: translate3d(0, 0, 0);
 
     margin-bottom: 50px;
+    @include min-width('mac') {
+      width: 522px;
+      padding-top: 95px;
+      padding-right: 34px;
+      padding-bottom: 124px;
+      padding-left: 39px;
+      margin-bottom: 0;
+    }
     @include min-width('large') {
       width: 579px;
       padding-top: 105px;
@@ -58,7 +70,11 @@
   }
   &__title {
     margin-bottom: 20px;
-    @include min-width('large') {
+    @include min-width('mac') {
+      @include font(40px, 700, 40px);
+    }
+
+    @include min-width('mac') {
       margin-bottom: 35px;
     }
   }
@@ -68,9 +84,10 @@
     }
   }
   &__item {
+    display: flex;
     color: $text-descr;
     @include font(14px, 400, 20px);
-    @include min-width('large') {
+    @include min-width('mac') {
       @include font(16px, 400, 20px);
     }
   }
@@ -81,7 +98,7 @@
   }
 }
 .large {
-  @include min-width('large') {
+  @include min-width('mac') {
     display: none;
   }
 }

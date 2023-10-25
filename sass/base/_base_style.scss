@@ -59,8 +59,8 @@ body.modal-open {
 section {
   padding: 15px 0px;
 
-  @include min-width('large') {
-    padding: 15px 0px;
+  @include min-width('mac') {
+    padding: 40px 0px;
   }
 }
 img {
@@ -75,6 +75,10 @@ img {
   margin-right: auto;
   @media screen and (min-width: 480px) {
     max-width: 480px;
+  }
+  @include min-width('mac') {
+    padding: 0px 30px;
+    max-width: 1140px;
   }
   @include min-width('large') {
     padding: 0px 60px;

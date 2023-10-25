@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include min-width('large') {
+    @include min-width('mac') {
       justify-content: start;
       flex-direction: row-reverse;
     }
@@ -27,7 +27,7 @@
     text-align: center;
     width: 100%;
     max-width: 375px;
-    @include min-width('large') {
+    @include min-width('mac') {
       max-width: 622px;
       height: 475px;
       top: 133px;
@@ -50,7 +50,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    @include min-width('large') {
+    @include min-width('mac') {
       margin-right: 190px;
       top: 110px;
     }
@@ -64,7 +64,7 @@
     margin-right: auto;
     width: 232px;
     height: 432px;
-    @include min-width('large') {
+    @include min-width('mac') {
       width: 382px;
       height: 693px;
     }
@@ -75,14 +75,14 @@
     margin-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
-    @include min-width('large') {
+    @include min-width('mac') {
       width: 555px;
       margin-right: 125px;
     }
   }
   &__title {
     margin-bottom: 20px;
-    @include min-width('large') {
+    @include min-width('mac') {
       @include font(48px, 400, 48px);
     }
   }
@@ -96,5 +96,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+    color: $background-main-color;
   }
 }

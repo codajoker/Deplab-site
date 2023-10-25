@@ -2,7 +2,7 @@
   color: $text-white;
   font-family: 'Futura';
   @include font(32px, 700, 36px);
-  @include min-width('large') {
+  @include min-width('mac') {
     @include font(48px, 700, 48px);
   }
 }
