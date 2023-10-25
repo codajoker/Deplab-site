@@ -1378,7 +1378,6 @@ button {
   z-index: 100;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 345px;
   padding-left: 15px;
