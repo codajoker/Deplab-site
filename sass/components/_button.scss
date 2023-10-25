@@ -11,8 +11,8 @@
   background-color: $accent-color;
   cursor: pointer;
   transition: background-color $main-duration $timing-function;
-  &:focus,
   &:hover {
-    background-color: #188ce8;
+    background: linear-gradient(0deg, #0f0 0%, rgba(8, 49, 8, 0) 106.14%);
+    color: white;
   }
 }
