@@ -323,6 +323,7 @@ button {
 }
 @media (min-width: 1200px) {
   .benefits__list-item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 19px;
   }
 }
